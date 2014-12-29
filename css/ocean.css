@@ -31,7 +31,7 @@ h6 {
 }
 
 p {
-    margin: 0 0 25px;
+    margin: 0 0 15px;
     font-size: 14px;
     line-height: 1.8;
     text-align: left;
@@ -39,7 +39,7 @@ p {
 
 @media(min-width:767px) {
     p {
-        margin: 0 0 35px;
+        margin: 0 0 15px;
         line-height: 1.8;
     }
 }
@@ -182,12 +182,14 @@ a:focus {
     }
 }
 
+
 .triangle {
     position: relative;
     width:0;
     border-right:solid 30px transparent;
     border-left:solid 30px transparent;
     border-top:solid 50px #444;
+    margin-top: 30px;
 }
 .triangle .empty {
     position: absolute;
@@ -258,6 +260,19 @@ a:focus {
 	border-color: #333;
 }
 
+.btn-social {
+	padding-top:15px;
+	padding-bottom:15px;
+}
+
+.fa-facebook {
+	position: relative;
+	top: 1px;
+}
+
+.examples-section {
+	padding-top: 50px;
+}
 
 
 @-webkit-keyframes pulse {    
@@ -301,42 +316,50 @@ a:focus {
 .flush {
 	padding-right: 0;
 	padding-left: 0;
+	max-height: 250px;
 }
 
-.work {
-	padding:130px;
-	color: #fff;
-	-webkit-transition: background .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out;
-    transition: background .3s ease-in-out;
-}
+.example1 {background: url(../img/portfolio/sunrise-sm.jpg) no-repeat center scroll; 
+	background-size: cover;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;}
 
-.work:hover {
-    background: rgba(0,0,0,0.3);
-}
+.example2 {background: url(../img/portfolio/service-connect-sm.jpg) no-repeat center scroll; 
+	background-size: cover;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;}
 
-.example1 {background-color: green;}
+.example3 {background: url(../img/portfolio/columbo-sm.jpg) no-repeat center scroll; 
+	background-size: cover;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;}
 
-.example2 {background-color: red;}
+.example4 {background: url(../img/portfolio/price-estimator-sm.jpg) no-repeat center scroll; 
+	background-size: cover;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;}
 
-.example3 {background-color: blue;}
+.example5 {background: url(../img/portfolio/experts-sm.jpg) no-repeat center scroll; 
+	background-size: cover;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;}
 
-.example4 {background-color: purple;}
+.example6 {background: url(../img/portfolio/arby-sm.jpg) no-repeat center scroll; 
+	background-size: cover;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;}
 
-.example5 {background-color: yellow;}
-
-.example6 {background-color: orange;}
-
-.example7 {background-color: lightblue;}
-
-.example8 {background-color: magenta;}
-
-.example9 {background-color: navy;}
 
 .work-overlay {
-	background: rgba(0,0,0,.5);
+	background: rgba(0,0,0,.7);
 	text-align: center;
-	padding: 100px;
+	padding: 100px 50px;
 	opacity: 0;
 	-webkit-transition: opacity .4s ease-in-out;
     -moz-transition: opacity .4s ease-in-out;
@@ -344,11 +367,13 @@ a:focus {
     color: #eee;
 }
 
+
+
 .work-overlay:hover {
 	opacity: 1;
 }
 
-.work-h5 {
+.work-h4 {
 	margin: 0 0 15px;
 }
 .work-body {
@@ -360,7 +385,7 @@ a:focus {
 
 .resume-section {
     width: 100%;
-    padding: 150px 0;
+    padding: 120px 0;
     color: #fff;
     /* background: url(../img/downloads-bg.jpg) no-repeat center center scroll; */
     background-color: #444;
@@ -380,7 +405,7 @@ a:focus {
     }
 
     .resume-section {
-        padding: 150px 0;
+        padding: 120px 0;
     }
 
 
@@ -471,4 +496,123 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
+}
+
+
+
+#portfolio .portfolio-item {
+    right: 0;
+    margin: 0 0 15px;
+}
+
+#portfolio .portfolio-item .portfolio-link {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: rgba(24,188,156,.9);
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    transition: all ease .5s;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption:hover {
+    opacity: 1;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption .caption-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 20px;
+    margin-top: -12px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption .caption-content i {
+    margin-top: -12px;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
+#portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
+    margin: 0;
+}
+
+#portfolio * {
+    z-index: 2;
+}
+
+@media(min-width:767px) {
+    #portfolio .portfolio-item {
+        margin: 0 0 30px;
+    }
+}
+
+.portfolio-modal .modal-content {
+    padding: 100px 0;
+    min-height: 100%;
+    border: 0;
+    border-radius: 0;
+    text-align: center;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+
+.portfolio-modal .modal-content img {
+    margin-bottom: 30px;
+}
+
+.portfolio-modal .modal-content .item-details {
+    margin: 30px 0;
+}
+
+.portfolio-modal .close-modal {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.portfolio-modal .close-modal:hover {
+    opacity: .3;
+}
+
+.portfolio-modal .close-modal .lr {
+    z-index: 1051;
+    width: 1px;
+    height: 75px;
+    margin-left: 35px;
+    background-color: #2c3e50;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.portfolio-modal .close-modal .lr .rl {
+    z-index: 1052;
+    width: 1px;
+    height: 75px;
+    background-color: #2c3e50;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.portfolio-modal .modal-backdrop {
+    display: none;
+    opacity: 0;
 }
