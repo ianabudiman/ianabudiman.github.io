@@ -320,6 +320,12 @@ a:focus {
 	max-height: 250px;
 }
 
+@media(max-width:767px) {
+	.flush {
+	margin-bottom: 5px;
+	}
+}
+
 .example1 {background: url(../img/portfolio/sunrise-sm.jpg) no-repeat center scroll; 
 	background-size: cover;
 	-webkit-background-size: cover;
