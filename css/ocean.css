@@ -208,6 +208,22 @@ a:focus {
 	border-top:solid 38px #eee;
 }
 
+@media(max-width:375px) {
+
+	.col-sm-6 {
+	padding-right: 0;
+	padding-left: 0;
+	}
+}
+
+@media(max-width:320px) {
+
+	.col-lg-8 {
+	padding-right: 0;
+	padding-left: 0;
+	}
+}
+
 .btn-circle {
     width: 70px;
     height: 70px;
@@ -456,7 +472,6 @@ ul.banner-social-buttons {
 
 @media(max-width:767px) {
     ul.banner-social-buttons li {
-        display: block;
         margin-bottom: 20px;
         padding: 0;
     }
