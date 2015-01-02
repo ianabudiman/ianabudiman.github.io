@@ -144,7 +144,8 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #444;
-    background: url() no-repeat bottom center scroll;
+    background: url(../img/triangles.png) no-repeat bottom center scroll;
+    background-attachment: fixed;
     background-color: #fff;
     -webkit-background-size: cover;
     -moz-background-size: cover;
