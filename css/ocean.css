@@ -438,6 +438,13 @@ a:focus {
     }
 }
 
+@media(max-width:320px) {
+    .col-lg-8 {
+    	padding-right: 0;
+		padding-left: 0;
+    }
+}
+
 
 
 @media(min-width:767px) {
