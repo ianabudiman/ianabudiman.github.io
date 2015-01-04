@@ -116,6 +116,11 @@ a:focus {
     background-color: rgba(0,0,0,.05);
 }
 
+
+.navbar-toggle {
+	margin-top: 3px;
+}
+
 @media(min-width:767px) {
     .navbar {
         padding: 20px 0;
@@ -144,13 +149,30 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #444;
-    background: url(../img/triangles.png) no-repeat bottom center scroll;
+    background: url(../img/triangles.png) no-repeat top center scroll;
     background-attachment: fixed;
     background-color: #fff;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    background-size: contain;
+    -o-background-size: contain;
+}
+
+@media(min-width:1000px) {
+	.intro {
+		background: url(../img/triangles.png) no-repeat top center scroll;
+		background-attachment: fixed;
+		-webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    background-size: cover;
+	    -o-background-size: cover;
+	}
+}
+
+@media(max-width:500px) {
+	.intro {
+		padding: 100px 0 70px 0;
+	}
 }
 
 .intro .intro-body {
@@ -409,7 +431,12 @@ a:focus {
     -o-background-size: cover;
 }
 
-
+@media(max-width:767px) {
+    .col-sm-6 {
+    	padding-right: 0;
+		padding-left: 0;
+    }
+}
 
 
 
@@ -470,7 +497,6 @@ ul.banner-social-buttons {
 
 @media(max-width:767px) {
     ul.banner-social-buttons li {
-        display: block;
         margin-bottom: 20px;
         padding: 0;
     }
