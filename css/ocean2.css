@@ -530,6 +530,14 @@ a:focus {
     -o-background-size: cover;
 }
 
+.proto2 {
+		background: url(../img/prototype/add-to-cart.jpg) no-repeat top scroll; 
+	background-size: cover;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
 
 @media(max-width:767px) {
     .col-sm-6 {
