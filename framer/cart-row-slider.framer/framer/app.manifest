@@ -1,9 +1,11 @@
 CACHE MANIFEST
-# 1420671502.136307
+# 1421002433.700841
 CACHE:
 /_server/server.js
+../.DS_Store
 ../app.coffee
 ../framer/.bowerrc
+../framer/app.manifest
 ../framer/backup.coffee
 ../framer/coffee-script.js
 ../framer/config.json
@@ -31,8 +33,12 @@ CACHE:
 ../images/cart-page.png
 ../images/done.png
 ../images/edit-button.png
+../images/edit-button1.png
 ../images/framer-icon.png
 ../images/slide-edit.png
+../images/slide-edit1.png
+../imported/.DS_Store
+../imported/cart-interaction/.DS_Store
 ../imported/cart-interaction/images/Bitmap-22837363-A2A0-443E-ADED-3707CAED257C.png
 ../imported/cart-interaction/images/Group-908D551C-A687-401C-B488-B79966056654.png
 ../imported/cart-interaction/images/Group-ABF7872C-8A09-477B-BF06-649C2746C496.png

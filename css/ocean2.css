@@ -471,6 +471,66 @@ a:focus {
     -o-background-size: cover;
 }
 
+
+.prototype-section {
+    width: 100%;
+    padding: 120px 0;
+    color: #444;
+    /* background: url(../img/downloads-bg.jpg) no-repeat center center scroll; */
+    background-color: #fff;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.prototype-img {
+    height: 250px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    margin-bottom: 100px;
+}
+
+.prototype-img h5 {
+	text-align: left;
+	margin-top: 20px;
+	margin-bottom: 5px;
+	color: #444;
+}	
+.prototype-img p {
+	color: #444;
+}	
+
+.prototype-img-overlay {
+	background: rgba(0,0,0,.2);
+	opacity: 0;
+	border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+	-webkit-transition: opacity .4s ease-in-out;
+    -moz-transition: opacity .4s ease-in-out;
+    transition: opacity .4s ease-in-out;
+    color: #eee;
+    height: 250px;
+    width: 100%;
+}
+
+.prototype-img-overlay:hover {
+	opacity: 1;
+}
+
+.proto1 {
+		background: url(../img/prototype/cart-row-slider.jpg) no-repeat top scroll; 
+	background-size: cover;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+
 @media(max-width:767px) {
     .col-sm-6 {
     	padding-right: 0;
