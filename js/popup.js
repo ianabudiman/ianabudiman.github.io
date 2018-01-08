@@ -1,4 +1,5 @@
-jQuery(document).ready(function($){
+
+$(document).ready(function($){
   
   window.onload = function (){
     $(".bts-popup").delay(1000).addClass('is-visible');
