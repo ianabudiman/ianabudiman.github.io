@@ -1,10 +1,8 @@
-
-$(document).ready(function($){
-  
+$(document).ready(function(){
   window.onload = function (){
     $(".bts-popup").delay(1000).addClass('is-visible');
 	}
-  
+
 	//open popup
 	$('.bts-popup-trigger').on('click', function(event){
 		event.preventDefault();
