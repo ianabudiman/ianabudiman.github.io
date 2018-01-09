@@ -829,13 +829,14 @@ body {
   padding: 20px 0 0 0;
 }
 .bts-popup-container p {
-    color: #444444;
+  color: #444444;
   padding: 10px 40px;
+  text-align: center;
 }
 .bts-popup-container .bts-popup-button {
   padding: 15px 50px;
   border: 1px solid #444;
-    display: inline-block;
+  display: inline-block;
   margin-bottom: 10px;
 }
 
@@ -843,6 +844,7 @@ body {
   color: #444;
   text-decoration: none;
   text-transform:uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .bts-popup-container a {
@@ -850,9 +852,8 @@ body {
   text-decoration: underline;
 }
 
-
-.no-thanks{
-  
+.bts-popup-container h1 {
+    margin: 30px 0 14px;
 }
 
 /*  Popup Push New Site */
